@@ -1,10 +1,17 @@
-import {store, mygames} from "./Games";
+import { Link } from "react-router-dom";
 
-export default function GameCard({title}){
+
+export default function GameCard({title, released, genres, link, img}){
     return (
         <>
         <section className="game-card">
-        <h2 classname="game-title">{title}</h2>
+            <Link to={link}>
+            <img src={img} alt={title} classname="game-image"></img>
+            <h2 className="game-title">{title}</h2>
+            </Link>
+            <p>Genres: <span>{genres}</span></p>
+            <p>Releasedate: {released}</p>
+            <Link to ={link}><button className="buy-button">Buy</button></Link> 
         </section>
         </>
     )
