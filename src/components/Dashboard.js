@@ -1,6 +1,13 @@
+import GameShop from "./GameShop";
 import {store, mygames} from "./Games";
+import MyFavourites from "./MyFavourites";
 
 export default function Dashboard(){
-    return ( <h1>tittel</h1>
+
+    return ( 
+        <>
+            <GameShop/>
+            <MyFavourites/>
+        </>
     )
 }
