@@ -1,3 +1,4 @@
+import GameCard from "./GameCard";
 import {store, mygames} from "./Games";
 
 export default function MyGames(){
