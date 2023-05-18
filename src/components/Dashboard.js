@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
-import GameShop from "./GameShop";
 import {store, mygames} from "./Games";
-import MyFavourites from "./MyFavourites";
 import GameCard from "./GameCard";
 
 export default function Dashboard(){
@@ -17,6 +15,7 @@ export default function Dashboard(){
         
             <section>
             <Link to="/GameShop"><h2>GAMESHOP</h2></Link>
+            <Link to="/Gameshop"><button>Visit Shop</button></Link>
             <ul>
                 {shortGameList?.map((randomGamesForSale, index) =>{
                     const {title, released, genres, img, link} = randomGamesForSale

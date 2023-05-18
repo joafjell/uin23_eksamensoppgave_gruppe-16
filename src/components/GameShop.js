@@ -8,7 +8,7 @@ export default function GameShop(){
     return(
         <>
         <section>
-            <Link to="/GameShop"><h2>Game Shop</h2></Link>
+            <Link to="/GameShop"><h2>GAMESHOP</h2></Link>
             <ul>
                 {store?.map((stores, index) =>{
                     const {title, released, genres, img, link} = stores

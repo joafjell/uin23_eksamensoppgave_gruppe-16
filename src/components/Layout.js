@@ -5,7 +5,7 @@ export default function Layout(){
         <div className="container">
             <header>
                 <Link to="/">
-                    <h1 className="title">Game Hub</h1>
+                    <h1 className="title">MACs Gamehub</h1>
                 </Link>
                 <nav>
                 <ul>
@@ -19,7 +19,7 @@ export default function Layout(){
                         <Link to="/MyFavourites">My fav</Link>
                     </li>
                     <li>  
-                    <Link to="/GameShop">Game shop</Link>
+                        <Link to="/GameShop">Game shop</Link>
                     </li> 
                 </ul>
             </nav>
