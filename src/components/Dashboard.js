@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import {store, mygames} from "./Games";
 import GameCard from "./GameCard";
 
-export default function Dashboard(){
-    
+export default function Dashboard(){ 
     const randomGames = store.sort(() => 0.5 - Math.random()) //Brukte koden på denne siden https://dev.to/codebubb/how-to-shuffle-an-array-in-javascript-2ikj som inspirasjon
     const shortGameList = randomGames.slice(0, 3) //Bruke en kode på denne siden https://stackoverflow.com/questions/34883068/how-to-get-first-n-number-of-elements-from-an-array som inspirasjon
     
