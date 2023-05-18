@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route element={<Layout/>}>
           <Route index element={<Dashboard/>}/>
-          <Route path=':slug' element={<GameShop store={store}/>}/>
-          <Route path=':slug' element={<MyFavourites mygames={mygames}/>}/>
+          <Route path='/GameShop' element={<GameShop store={store}/>}/>
+          <Route path='/MyFavourites' element={<MyFavourites mygames={mygames}/>}/>
         </Route>
       </Routes>
     );
