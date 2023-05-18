@@ -1,3 +1,19 @@
+import GameShop from "./GameShop";
+// import {store, mygames} from "./games";
+import GamePage from "./GamePage";
+import MyGames from "./MyGames";
+import { store, mygames } from './components/Games';
+
+
+
 export default function Dashboard(){
-    <h1>Forside</h1>
+    return ( 
+        <>
+            <GameShop/>
+            <GamePage/>
+            <MyGames/>
+
+            
+        </>
+    )
 }
