@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-/*har brukt https://github.com/joafjell/uin23ak4_moviesearch_fjell/blob/main/src/components/MovieCards.js som inspirasjon*/
+/*Vi har brukt https://github.com/joafjell/uin23ak4_moviesearch_fjell/blob/main/src/components/MovieCards.js som inspirasjon*/
 
 export default function GameCard({title, released, genres, link, img}){
     return (

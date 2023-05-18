@@ -1,4 +1,3 @@
-
 import {store} from "./Games";
 import GameCard from "./GameCard";
 import { Link } from "react-router-dom";
@@ -20,6 +19,5 @@ export default function GameShop(){
             </ul>    
         </section>
         </>
-
     )
 }

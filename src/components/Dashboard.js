@@ -11,7 +11,6 @@ export default function Dashboard(){
 
     return ( 
         <>
-        
             <section>
             <Link to="/GameShop"><h2>GAMESHOP</h2></Link>
             <Link to="/Gameshop"><button>Visit Shop</button></Link>
