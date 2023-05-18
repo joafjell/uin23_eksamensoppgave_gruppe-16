@@ -1,6 +1,4 @@
-import GameCard from "./GameCard";
-import {mygames} from "./Games"
-// import MyFavourites from './components/MyFavorites';
+import {store, mygames} from "./Games";
 
 export default function MyGames(){
   return (
