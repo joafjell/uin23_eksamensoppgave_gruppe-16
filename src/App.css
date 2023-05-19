@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
-
+  
 .buy-button{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
@@ -13,15 +13,28 @@
 .container{
     width: 100%;
 }
-
+  
 .dashboard-shop-title{
   margin-left: 9.4rem;
 }
-
+  
 .dashboard-shop-title, .shop-button{ /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
     display: inline-block;
 }
-
+  
+.favourite-button{
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 15.5rem;
+}
+  
+.favourite-title{
+    margin-left: 15.5rem;
+}
+  
 .game-card{
     display: flex;
     flex-direction: column;
@@ -29,20 +42,34 @@
     max-width: 400px;
     padding: 1.5rem 1rem 1.5rem 1rem;      
 }
-
+  
 .game-shop-image{
     width: 100%;
 }
-
+  
+.game-tile{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    margin: 0 auto;
+}
+  
+.my-games-button{
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin-left: 15.5rem;
+}
+  
 .navigation{
     display: flex;
     flex-direction: row;
 }
-
+  
 .navigation li{
     padding: 0 1rem 0 1rem;
 }
-
+  
 .shop-button{
     margin: 0 0 0 2rem;
     background-color: black;
@@ -52,14 +79,33 @@
     border-radius: 10px;
 }
   
+.library-title{
+    margin-left: 15.6rem;
+}
+  
+.link-text{
+    text-decoration: none;
+    color: black;
+}
+  
 .title{
     color: white;
 }
-
+  
 .title, nav{
     display: inline-block;
-  }
-
+}
+  
+.ul-favourites{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+}
+  
 .ul-shop{
     display: flex;
     background-color: rgb(220, 219, 219);
@@ -69,10 +115,20 @@
     padding: 0;
 }
 
+.ul-library{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+}
+  
 body{
     background-color: black;
 }
-
+  
 header{
     background-color: black;
     padding: 5px 0 5px 0;
@@ -80,18 +136,20 @@ header{
     width: 100%;
     max-width: 1500px;
 }
-
+  
 main{
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     background-color: white;
 }
-
+  
+  
+  
 nav{
     font-weight: bold;
 }
-
+  
 nav ul li .link-text{
     text-decoration: none;
     color: white;
