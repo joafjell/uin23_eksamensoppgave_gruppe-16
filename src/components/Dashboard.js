@@ -24,8 +24,18 @@ export default function Dashboard(){
                 })}            
             </ul>    
         </section>
-        <section className="dashboard-library">
-            <Link to="MyFavourites"className="link-text"><h2 className="library-title">MFavourites</h2></Link>
+            <section className="dashboard-library">
+            <Link to="/MyGames" className="link-text"><h2 className="library-title">MY GAMES-LIBRARY</h2></Link>
+            <ul className="ul-library">
+                {libraryGames?.map((libraryGame, index) =>{
+                    const {title, released, genres, img, link} = libraryGame
+                    return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={libraryGame?.libraryGame?.label.replace(/\s/g, "-").toLowerCase()}/>                       
+                })}            
+            </ul>
+            <Link to="/MyFavourites"><button>My Favourites</button></Link>     
+        </section>  
+        <section className="dashboard-favourite">
+            <Link to="MyFavourites"className="link-text"><h2 className="favourite-title">My Favourites</h2></Link>
             <ul className="ul-library">
                 {shortenedFavourites?.map((shortenedFavourite, index) =>{
                     const {title, released, genres, img, link} = shortenedFavourite
@@ -34,16 +44,7 @@ export default function Dashboard(){
             </ul>
             <Link to="/MyGames"><button>My Games</button></Link>    
         </section>
-        <section className="dashboard-favourite">
-            <Link to="/MyFavourites" className="link-text"><h2 className="favourite-title">MY GAMES-LIBRARY</h2></Link>
-            <ul>
-                {libraryGames?.map((libraryGame, index) =>{
-                    const {title, released, genres, img, link} = libraryGame
-                    return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={libraryGame?.libraryGame?.label.replace(/\s/g, "-").toLowerCase()}/>                       
-                })}            
-            </ul>
-            <Link to="/MyFavourites"><button>My Favourites</button></Link>     
-        </section>   
+ 
     </>
     )
 }

@@ -190,6 +190,7 @@
     text-decoration: none;
     color: white;
   }
+  
   /* media queries breaking point https://testsigma.com/blog/css-breakpoints/*/
   @media only screen and (min-width: 1000px) and (max-width: 1400px) {
     .dashboard-shop-title{

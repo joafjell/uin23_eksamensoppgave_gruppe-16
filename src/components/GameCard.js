@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function GameCard({title, released, genres, link, img}){
     return (
         <>
-        <article className="game-tile">
+        <article className="game-card">
             <Link to={link}>
             <img src={img} alt={title} className="game-shop-image"></img>
             </Link>
