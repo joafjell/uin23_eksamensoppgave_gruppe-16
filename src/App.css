@@ -222,7 +222,7 @@
     } 
     
     .game-shop-title{ 
-      margin-left: 22rem;
+      margin: auto 0;
     }
 
     .favourite-title{
@@ -243,7 +243,7 @@
     
     .ul-my-games{
       max-width: 1000px;
-  
+      width: 100%
     }
   
     .favourite-title{
@@ -252,6 +252,7 @@
   
     .ul-my-favourites{
       max-width: 1000px;
+      width: 100%;
     }
   
     .favourite-title{
@@ -324,7 +325,7 @@
       max-width: 650px;
     }
     .favourite-button{
-      max-width: 650px;
+      margin: auto 0;
     }
   }
   
@@ -390,8 +391,7 @@
       width: 100%
     }
     .favourite-button{
-      max-width: 475px;
-      width: 100%
+      margin: auto  0;
     }
   
   }
