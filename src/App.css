@@ -143,9 +143,7 @@ main{
     margin: 0 auto;
     background-color: white;
 }
-  
-  
-  
+    
 nav{
     font-weight: bold;
 }
@@ -153,4 +151,8 @@ nav{
 nav ul li .link-text{
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+    
 }
