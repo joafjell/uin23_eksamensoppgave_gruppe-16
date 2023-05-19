@@ -1,102 +1,106 @@
 *{
     box-sizing: border-box;
-}
+  }
   
-.buy-button{
+  .buy-button{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
     background-color: black;
     color: white;
     border-radius: 10px;
-}
+  }
   
-.container{
+  .container{
     width: 100%;
-}
+  }
   
-.dashboard-shop-title{
+  .dashboard-shop-title{
   margin-left: 9.4rem;
-}
+  }
   
-.dashboard-shop-title, .shop-button{ /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
+  .dashboard-shop-title, .shop-button{ /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
     display: inline-block;
-}
+  }
   
-.favourite-button{
+  .favourite-button{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
     background-color: black;
     color: white;
     border-radius: 10px;
     margin-left: 15.5rem;
-}
+  }
   
-.favourite-title{
+  .favourite-title{
     margin-left: 15.5rem;
-}
+  }
   
-.game-card{
+  .game-card{
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 400px;
     padding: 1.5rem 1rem 1.5rem 1rem;      
-}
+  }
   
-.game-shop-image{
+  .game-shop-image{
     width: 100%;
-}
+  }
   
-.game-tile{
+  .game-shop-title{
+    margin-left: 21.8rem;
+  }
+  
+  .game-tile{
     padding: 1.5rem 1rem 1.5rem 1rem;
     margin: 0 auto;
-}
+  }
   
-.my-games-button{
+  .my-games-button{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
     background-color: black;
     color: white;
     border-radius: 10px;
     margin-left: 15.5rem;
-}
+  }
   
-.navigation{
+  .navigation{
     display: flex;
     flex-direction: row;
-}
+  }
   
-.navigation li{
+  .navigation li{
     padding: 0 1rem 0 1rem;
-}
+  }
   
-.shop-button{
+  .shop-button{
     margin: 0 0 0 2rem;
     background-color: black;
     color: white;
     font-weight: bold;
     padding: 5px 15px 5px 15px;
     border-radius: 10px;
-}
+  }
   
-.library-title{
+  .library-title{
     margin-left: 15.6rem;
-}
+  }
   
-.link-text{
+  .link-text{
     text-decoration: none;
     color: black;
-}
+  }
   
-.title{
+  .title{
     color: white;
-}
+  }
   
-.title, nav{
+  .title, nav{
     display: inline-block;
-}
+  }
   
-.ul-favourites{
+  .ul-favourites{
     display: flex;
     background-color: rgb(220, 219, 219);
     margin: 0 auto;
@@ -104,53 +108,244 @@
     width: 100%;
     max-width: 1000px;
     padding: 0;
-}
+  }
   
-.ul-shop{
+  .ul-game-shop{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 0;
+  }
+  
+  .ul-library{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+  }
+  
+  .ul-my-favourites{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+  }
+  
+  .ul-my-games{
+    display: flex;
+    background-color: rgb(220, 219, 219);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0;
+  }
+  
+  .ul-shop{
     display: flex;
     background-color: rgb(220, 219, 219);
     margin: 0 auto;
     width: 100%;
     max-width: 1200px;
     padding: 0;
-}
-
-.ul-library{
-    display: flex;
-    background-color: rgb(220, 219, 219);
-    margin: 0 auto;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1000px;
-    padding: 0;
-}
+  }
   
-body{
+  body{
     background-color: black;
-}
+  }
   
-header{
+  header{
     background-color: black;
     padding: 5px 0 5px 0;
     margin: 0 auto;
     width: 100%;
     max-width: 1500px;
-}
+  }
   
-main{
+  main{
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
     background-color: white;
-}
+  }
   
+  .my-games-title{
+    margin-left: 15.5rem;
+  }
   
-  
-nav{
+  nav{
     font-weight: bold;
-}
+  }
   
-nav ul li .link-text{
+  nav ul li .link-text{
     text-decoration: none;
     color: white;
-}
+  }
+  /* media queries breaking point https://testsigma.com/blog/css-breakpoints/*/
+  @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .dashboard-shop-title{
+        margin-left: auto; 
+        margin-right: auto;    
+    }
+  
+    .favourite-button{
+      margin: auto 0;
+    } 
+  
+    .favourite-title{
+      margin: auto 0;
+    }
+  
+    .library-title{
+      margin: auto 0;
+    }
+  
+    .my-games-button{
+      margin: auto 0;
+    }
+  
+    .my-games-title{
+  
+    }
+    
+    .ul-my-games{
+      max-width: 1000px;
+  
+    }
+  
+    .favourite-title{
+      margin: auto 0;
+    }
+  
+    .ul-my-favourites{
+      max-width: 1000px;
+    }
+  
+    .favourite-title{
+      margin: auto 0;
+    }
+  
+    .game-shop-title{
+      max-width: 1000px
+    }
+    
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1000px){
+    
+    .favourite-title{
+      margin: auto 0;
+    }
+    
+    .ul-my-favourites{
+      max-width: 650px;
+    }
+  
+    .my-games-title{
+      margin: auto 0;
+    }
+  
+    .ul-my-games{
+      max-width: 650px;
+    }
+  
+    .game-shop-title{
+      margin: auto, 0;
+    }
+  
+    .ul-game-shop{
+      max-width:650px;
+    }
+    
+    .ul-library{
+      max-width: 650px;
+    }
+  
+    .library-title{
+      margin: auto 0;
+    }
+  
+    .my-games-button{
+      margin: auto 0;
+    }
+  
+    .dashboard-shop-title{
+      margin: auto 0;
+    }
+  
+    .ul-shop{
+      max-width: 750px;
+    }
+    
+    .ul-favourites{
+      max-width: 650px;
+    }
+    .favourite-button{
+      max-width: 650px;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 768px){
+    
+    .ul-shop{
+      flex-direction: column;
+      max-width: 475px;
+    }
+  
+    .favourite-title{
+      margin: auto 0;
+    }
+    
+    .ul-my-favourites{
+      max-width: 475px;
+    }
+  
+    .my-games-title{
+      margin: auto 0;
+    }
+  
+    .ul-my-games{
+      max-width: 475px;
+    }
+  
+    .game-shop-title{
+      margin: auto, 0;
+    }
+  
+    .ul-game-shop{
+      max-width:475px;
+    }
+    
+    .ul-library{
+      max-width: 475px;
+    }
+  
+    .library-title{
+      margin: auto 0;
+    }
+  
+    .my-games-button{
+      margin: auto 0;
+    }
+  
+    .dashboard-shop-title{
+      margin: auto 0;
+    }
+    
+    .ul-favourites{
+      max-width: 475px;
+    }
+    .favourite-button{
+      max-width: 475px;
+    }
+  
+  }
