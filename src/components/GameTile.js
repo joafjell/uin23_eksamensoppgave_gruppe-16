@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function GameTile({title, released, genres, link, img}){
     return (
         <>
-        <section className="game-card">
+        <section className="game-tile">
             <Link to={link} className="link-text">
             <img src={img} alt={title} className="game-image"></img>
             <h2 className="game-title">{title}</h2>

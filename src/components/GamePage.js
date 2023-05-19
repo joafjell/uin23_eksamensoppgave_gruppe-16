@@ -1,7 +1,4 @@
 import { useParams } from "react-router-dom"
-// import MyFavourites from './components/MyFavorites';
-// import GameCard from "./GameCard";
-import {store, mygames} from "./Games";
 
 // Har brukt https://github.com/ackarlse/gitcollab/blob/main/src/components/RecipePage.js//
 

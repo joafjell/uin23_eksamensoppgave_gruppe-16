@@ -1,5 +1,4 @@
 import { Link} from "react-router-dom";
-import GameCard from "./GameCard";
 import {mygames} from "./Games";
 import GameTile from "./GameTile";
 
@@ -13,8 +12,8 @@ export default function MyFavourites(){
     return(
         <>
             <section>
-                <Link to="MyFavourites"><h2>Favourites</h2></Link>
-                <ul>
+                <Link to="MyFavourites" className="link-text"><h2 className="favourite-title">Favourites</h2></Link>
+                <ul className="ul-my-favourites">
                     {favourite?.map((favourites, index) =>{
                         const {title, released, genres, img, link} = favourites
                         return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={favourites?.favourites?.label.replace(/\s/g, "-").toLowerCase()}/>
