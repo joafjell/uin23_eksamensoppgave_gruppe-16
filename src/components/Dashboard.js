@@ -32,7 +32,7 @@ export default function Dashboard(){
                     return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={libraryGame?.libraryGame?.label.replace(/\s/g, "-").toLowerCase()}/>                       
                 })}            
             </ul>
-            <Link to="/MyFavourites"><button>My Favourites</button></Link>     
+            <Link to="/MyFavourites"><button className="favourite-button">My Favourites</button></Link>     
         </section>  
         <section className="dashboard-favourite">
             <Link to="MyFavourites"className="link-text"><h2 className="favourite-title">My Favourites</h2></Link>
@@ -42,7 +42,7 @@ export default function Dashboard(){
                     return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={shortenedFavourite?.shortenedFavourite?.label.replace(/\s/g, "-").toLowerCase()}/>
                 })}            
             </ul>
-            <Link to="/MyGames"><button>My Games</button></Link>    
+            <Link to="/MyGames"><button className="my-games-button">My Games</button></Link>    
         </section>
  
     </>
