@@ -49,8 +49,8 @@
     width: 100%;
   }
   
-  .game-shop-title{
-    margin-left: 21.8rem;
+  .game-shop-title{ 
+    margin-left: 22rem;
   }
   
   .game-tile{
@@ -184,8 +184,10 @@
     background-color: white;
   }
   
+
+
   .my-games-title{
-    margin-left: 15.5rem;
+    margin-left: 17rem;
   }
   
   nav{
@@ -218,7 +220,11 @@
     .favourite-button{
       margin: auto 0;
     } 
-  
+    
+    .game-shop-title{ 
+      margin-left: 22rem;
+    }
+
     .favourite-title{
       margin: auto 0;
     }
@@ -253,7 +259,7 @@
     }
   
     .game-shop-title{
-      max-width: 1000px
+      margin: auto 0;
     }
     
   }
@@ -283,7 +289,7 @@
     }
   
     .game-shop-title{
-      margin: auto, 0;
+      margin: auto 0;
     }
   
     .ul-game-shop{
@@ -327,7 +333,7 @@
     p{
         font-size: 16px;
     }
-
+    
     .ul-shop{
         display: flex;
         flex-wrap: wrap;
@@ -354,7 +360,7 @@
     }
   
     .game-shop-title{
-      margin: auto, 0;
+      margin: auto 0;
     }
   
     .ul-game-shop{
