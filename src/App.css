@@ -15,7 +15,7 @@
   }
   
   .dashboard-shop-title{
-  margin-left: 9.4rem;
+   margin-left: 9.4rem;
   }
   
   .dashboard-shop-title, .shop-button{ /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
@@ -191,8 +191,18 @@
     color: white;
   }
   
+  p{
+    font-size: 23px;
+
+  }
+
   /* media queries breaking point https://testsigma.com/blog/css-breakpoints/*/
   @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    p{
+        font-size: 21
+    }
+    
     .dashboard-shop-title{
         margin-left: auto; 
         margin-right: auto;    
@@ -243,6 +253,10 @@
   
   @media only screen and (min-width: 769px) and (max-width: 1000px){
     
+    p{
+        font-size: 18px;
+    }
+
     .favourite-title{
       margin: auto 0;
     }
@@ -297,8 +311,14 @@
   
   @media only screen and (min-width: 481px) and (max-width: 768px){
     
+    p{
+        font-size: 18px;
+    }
+
     .ul-shop{
-      flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;  
       max-width: 475px;
     }
   
