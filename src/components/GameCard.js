@@ -5,15 +5,18 @@ import { Link } from "react-router-dom";
 export default function GameCard({title, released, genres, link, img}){
     return (
         <>
-        <section className="game-card">
+        <article className="game-tile">
             <Link to={link}>
-            <img src={img} alt={title} className="game-image"></img>
-            <h2 className="game-title">{title}</h2>
+            <img src={img} alt={title} className="game-shop-image"></img>
             </Link>
-            <p>Genres: <span>{genres}</span></p>
-            <p>Releasedate: {released}</p>
-            <Link to ={link}><button className="buy-button">Buy</button></Link> 
-        </section>
+            <Link className="link-text">
+            <h2 className="game-title game-info">{title}</h2>
+            </Link>
+            
+            <p className="game-info">Genres: <span>{genres}</span> 
+            Releasedate: <span> {released} </span></p>
+            <Link to ={link}><button className="buy-button">Buy</button></Link>
+        </article>
         </>
     )
 }

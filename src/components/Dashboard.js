@@ -14,37 +14,36 @@ export default function Dashboard(){
 
     return ( 
         <>
-            <section>
-            <Link to="/GameShop"><h2>GAMESHOP</h2></Link>
-            <Link to="/Gameshop"><button>Visit Shop</button></Link>
-            <ul>
+            <section className="dashboard-shop">
+            <Link to="/GameShop" className="link-text"><h2 className="dashboard-shop-title">GAMESHOP</h2></Link>
+            <Link to="/Gameshop" className="link-text"><button className="shop-button">Visit Shop</button></Link>
+            <ul className="ul-shop">
                 {shortGameList?.map((randomGamesForSale, index) =>{
                     const {title, released, genres, img, link} = randomGamesForSale
                     return <GameCard key={index} title={title} released={released} genres={genres} img={img} link={link} slug={randomGamesForSale?.randomGamesForSale?.label.replace(/\s/g, "-").toLowerCase()}/>
                 })}            
             </ul>    
         </section>
-        <section>
-                <Link to="MyFavourites"><h2>Favourites</h2></Link>
-                <ul>
-                    {shortenedFavourites?.map((shortenedFavourite, index) =>{
-                        const {title, released, genres, img, link} = shortenedFavourite
-                        return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={shortenedFavourite?.shortenedFavourite?.label.replace(/\s/g, "-").toLowerCase()}/>
-                        
-                    })}            
-                </ul>    
-            </section>
-            <section>
-                <Link to="/MyGames" className="link-text"><h2>MY GAMES-LIBRARY</h2></Link>
-                <ul>
-                    {libraryGames?.map((libraryGame, index) =>{
-                        const {title, released, genres, img, link} = libraryGame
-                        return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={libraryGame?.libraryGame?.label.replace(/\s/g, "-").toLowerCase()}/>                       
-                    })}            
-                </ul>    
-            </section>
-            
-            
-        </>
+        <section className="dashboard-library">
+            <Link to="MyFavourites"className="link-text"><h2 className="library-title">MFavourites</h2></Link>
+            <ul className="ul-library">
+                {shortenedFavourites?.map((shortenedFavourite, index) =>{
+                    const {title, released, genres, img, link} = shortenedFavourite
+                    return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={shortenedFavourite?.shortenedFavourite?.label.replace(/\s/g, "-").toLowerCase()}/>
+                })}            
+            </ul>
+            <Link to="/MyGames"><button>My Games</button></Link>    
+        </section>
+        <section className="dashboard-favourite">
+            <Link to="/MyFavourites" className="link-text"><h2 className="favourite-title">MY GAMES-LIBRARY</h2></Link>
+            <ul>
+                {libraryGames?.map((libraryGame, index) =>{
+                    const {title, released, genres, img, link} = libraryGame
+                    return <GameTile key={index} title={title} released={released} genres={genres} img={img} link={link} slug={libraryGame?.libraryGame?.label.replace(/\s/g, "-").toLowerCase()}/>                       
+                })}            
+            </ul>
+            <Link to="/MyFavourites"><button>My Favourites</button></Link>     
+        </section>   
+    </>
     )
 }
