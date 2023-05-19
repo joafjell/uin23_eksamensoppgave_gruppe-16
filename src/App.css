@@ -2,6 +2,8 @@
     box-sizing: border-box;
   }
   
+  
+
   .buy-button{
     padding: 10px 20px 10px 20px;
     font-weight: bold;
@@ -9,7 +11,7 @@
     color: white;
     border-radius: 10px;
   }
-  
+
   .container{
     width: 100%;
   }
@@ -18,7 +20,7 @@
    margin-left: 9.4rem;
   }
   
-  .dashboard-shop-title, .shop-button{ /*https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
+  .dashboard-shop-title, .shop-button{ /* Brukt https://stackoverflow.com/questions/9067892/how-to-align-two-elements-on-the-same-line-without-changing-html*/
     display: inline-block;
   }
   
@@ -35,7 +37,7 @@
     margin-left: 15.5rem;
   }
   
-  .game-card{
+  .game-card{/*Brukt https://github.com/joafjell/uin23ak4_moviesearch_fjell/blob/main/src/css/main.css*/
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -171,7 +173,11 @@
     max-width: 1500px;
   }
   
-  main{
+  img{
+    width: 100%;
+  }
+
+  main{/*Brukt https://github.com/joafjell/uin23ak4_moviesearch_fjell/blob/main/src/css/main.css*/
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
@@ -195,6 +201,7 @@
     font-size: 23px;
 
   }
+
 
   /* media queries breaking point https://testsigma.com/blog/css-breakpoints/*/
   @media only screen and (min-width: 1000px) and (max-width: 1400px) {
@@ -225,7 +232,7 @@
     }
   
     .my-games-title{
-  
+        margin: auto 0;
     }
     
     .ul-my-games{
@@ -263,6 +270,7 @@
     
     .ul-my-favourites{
       max-width: 650px;
+      width: 100%
     }
   
     .my-games-title{
@@ -271,6 +279,7 @@
   
     .ul-my-games{
       max-width: 650px;
+      width: 100%
     }
   
     .game-shop-title{
@@ -279,10 +288,12 @@
   
     .ul-game-shop{
       max-width:650px;
+      width: 100%
     }
     
     .ul-library{
       max-width: 650px;
+      width: 100%
     }
   
     .library-title{
@@ -295,10 +306,12 @@
   
     .dashboard-shop-title{
       margin: auto 0;
+
     }
   
     .ul-shop{
       max-width: 750px;
+      width: 100%
     }
     
     .ul-favourites{
@@ -312,7 +325,7 @@
   @media only screen and (min-width: 481px) and (max-width: 768px){
     
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .ul-shop{
@@ -328,6 +341,7 @@
     
     .ul-my-favourites{
       max-width: 475px;
+      width: 100%
     }
   
     .my-games-title{
@@ -336,6 +350,7 @@
   
     .ul-my-games{
       max-width: 475px;
+      width: 100%
     }
   
     .game-shop-title{
@@ -344,10 +359,12 @@
   
     .ul-game-shop{
       max-width:475px;
+      width: 100%
     }
     
     .ul-library{
       max-width: 475px;
+      width: 100%
     }
   
     .library-title{
@@ -364,9 +381,11 @@
     
     .ul-favourites{
       max-width: 475px;
+      width: 100%
     }
     .favourite-button{
       max-width: 475px;
+      width: 100%
     }
   
   }
